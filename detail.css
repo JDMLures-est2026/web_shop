@@ -1,0 +1,192 @@
+:root {
+    --green: #154734;
+    --red: #dc1c13;
+    --lime: #32cd32;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #faf9f4;
+    color: var(--green);
+    line-height: 1.6;
+}
+
+section{
+    margin: 0 20px;
+}
+
+
+/* ===== HEADER ===== */
+.top-bar {
+    background: var(--green);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.top-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.flag {
+    width: 20px;
+    height: 14px;
+}
+
+/* ===== LOGO ===== */
+
+a .buy-now{
+    color: white;
+}
+
+.logo-section {
+    text-align: center;
+    /* margin: 20px 0; */
+}
+
+.logo-m{
+    margin: 0;
+}
+
+section .logo-section {
+margin: 0;
+}
+
+.logo-section{
+    margin: 0;
+}
+
+/* ===== PRODUCT DETAIL ===== */
+#detail-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 5px;
+}
+
+#detail-price-top,
+#detail-price-bottom {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+/* ===== HERO IMAGE ===== */
+#detail-hero-img {
+    display: block;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    /* border-radius: 8px; */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== ADDITIONAL IMAGES ===== */
+#additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* #additional-images img {
+    width: calc(25% - 10px);
+    max-width: 200px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+} */
+
+/* ===== PAYPAL BUTTON PLACEHOLDER ===== */
+#paypal-button-container-top,
+#paypal-button-container-bottom {
+    text-align: center;
+    margin: 10px 0 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* ===== BACK BUTTON ===== */
+.back {
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+.back a {
+    text-decoration: none;
+    background: var(--green);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* .back a:hover {
+    background: var(--lime);
+    color: #000;
+} */
+/* ===== CONTACT ICONS ===== */
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.gmail {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png);
+}
+
+.instagram {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg);
+}
+
+.whatsapp {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg);
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    opacity: 0.7;
+    border-top: 1px solid #ddd;
+}
