@@ -43,7 +43,7 @@
   <div id="paypal-container-TAPNYMJGH3VTJ"></div>
   <script>
     paypal.HostedButtons({
-      hostedButtonId: "TAPNYMJGH3VTJ",
+      hostedButtonId: "TAPNYMJGH3VTJ", // 本番用 Hosted Button ID
     }).render("#paypal-container-TAPNYMJGH3VTJ")
   </script>
 </section>
@@ -75,9 +75,8 @@
   </nav>
 </footer>
 
-<!-- ===== JS: 日本時間 & PayPal ===== -->
+<!-- ===== JS: 日本時間表示 ===== -->
 <script>
-  // 日本時間表示
   function updateJapanTime(){
     const now = new Date();
     const japan = new Date(now.toLocaleString("en-US",{timeZone:"Asia/Tokyo"}));
