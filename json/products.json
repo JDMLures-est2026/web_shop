@@ -21,7 +21,7 @@
     "title": "PACKAGE #2",
     "price": 180,
     "hero": "detail/img/002/IMG_1828.png",
-    "thumbnail": "../detail/img/002/IMG_1828.png",
+    "thumbnail": "detail/img/002/IMG_1828.png",
     "link": "detail/detail_002.html",
     "soldDate": "2026-03-12",
     "listedDate": "2026-03-12",
