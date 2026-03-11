@@ -10,143 +10,97 @@
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="../detail.css">
 
-<!-- PayPal Hosted Button SDK -->
-<script src="https://www.paypal.com/sdk/js?client-id=BAAYSfUfej86zu2_Z_lIDiT7Q67DauvIVyGDuJ7dYHqjZs4cyXbCMfsP8uH-0468Sg4KRFglHW7a7xa7qM&components=hosted-buttons&currency=USD"></script>
-
 </head>
 
 <body>
 
 <!-- HEADER -->
 <div class="top-bar">
-<div class="top-inner">
-
-<img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
-class="flag"
-alt="Japan Flag"
-style="width:20px;height:14px;margin-right:8px;vertical-align:middle;">
-
-<span id="japan-time">00:00:00</span>
-
-</div>
+  <div class="top-inner">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+         class="flag"
+         alt="Japan Flag"
+         style="width:20px;height:14px;margin-right:8px;vertical-align:middle;">
+    <span id="japan-time">00:00:00</span>
+  </div>
 </div>
 
 <section class="logo-section">
-<img src="../img/index/logo.webp" alt="JDMLures Logo">
+  <img src="../img/index/logo.webp" alt="JDMLures Logo">
 </section>
 
 <section>
-<h2 id="detail-title">PACKAGE #2</h2>
+  <h2 id="detail-title">PACKAGE #2</h2>
 </section>
 
 <section id="additional-images">
-
-<img id="detail-hero-img"
-src="../detail/img/002/IMG_1828.png"
-alt="PACKAGE #2">
-
-<img src="../detail/img/002/IMG_1832.png" alt="PACKAGE #2">
-<img src="../detail/img/002/IMG_1830.png" alt="PACKAGE #2">
-<img src="../detail/img/002/IMG_1831.png" alt="PACKAGE #2">
-
+  <img id="detail-hero-img" src="../detail/img/002/IMG_1828.png" alt="PACKAGE #2">
+  <img src="../detail/img/002/IMG_1832.png" alt="PACKAGE #2">
+  <img src="../detail/img/002/IMG_1830.png" alt="PACKAGE #2">
+  <img src="../detail/img/002/IMG_1831.png" alt="PACKAGE #2">
 </section>
 
-<!-- PAYPAL BUTTON -->
-<section>
-
-<div id="paypal-container-78BR9WKKCMMLL"></div>
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function(){
-
-paypal.HostedButtons({
-
-hostedButtonId: "78BR9WKKCMMLL"
-
-}).render("#paypal-container-78BR9WKKCMMLL");
-
-});
-
-</script>
-
+<!-- PAYPAL PAYMENT LINK BUTTON -->
+<section style="text-align:center;margin-top:40px;">
+  <a href="https://www.paypal.com/ncp/payment/78BR9WKKCMMLL" 
+     target="_blank"
+     style="
+       display:inline-block;
+       background:#0070ba;
+       color:white;
+       font-size:20px;
+       padding:15px 40px;
+       border-radius:6px;
+       text-decoration:none;
+       font-weight:bold;
+     ">
+     BUY NOW WITH PAYPAL
+  </a>
 </section>
 
 <!-- CONTACT -->
-
 <section class="section contact">
-
-<div class="container">
-
-<h2>CONTACT</h2>
-
-<ul class="contact-list">
-
-<li>
-<a href="https://www.instagram.com/jdmlures/"
-class="contact-icon instagram"
-target="_blank"></a>
-</li>
-
-<li>
-<a href="mailto:jdmlures2026@gmail.com"
-class="contact-icon gmail"></a>
-</li>
-
-<li>
-<a href="https://wa.me/817084195951"
-class="contact-icon whatsapp"
-target="_blank"></a>
-</li>
-
-</ul>
-
-</div>
-
+  <div class="container">
+    <h2>CONTACT</h2>
+    <ul class="contact-list">
+      <li>
+        <a href="https://www.instagram.com/jdmlures/" class="contact-icon instagram" target="_blank"></a>
+      </li>
+      <li>
+        <a href="mailto:jdmlures2026@gmail.com" class="contact-icon gmail"></a>
+      </li>
+      <li>
+        <a href="https://wa.me/817084195951" class="contact-icon whatsapp" target="_blank"></a>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <section>
-
-<div class="back">
-<a href="../index.html">BACK</a>
-</div>
-
+  <div class="back">
+    <a href="../index.html">BACK</a>
+  </div>
 </section>
 
 <footer class="footer">
-
-<p>© 2026 JDM Lures All Rights Reserved.</p>
-
-<nav>
-<a href="#">Refund Policy</a> |
-<a href="#">Terms of Service</a> |
-<a href="#">Privacy Policy</a>
-</nav>
-
+  <p>© 2026 JDM Lures All Rights Reserved.</p>
+  <nav>
+    <a href="#">Refund Policy</a> |
+    <a href="#">Terms of Service</a> |
+    <a href="#">Privacy Policy</a>
+  </nav>
 </footer>
 
 <!-- JAPAN TIME -->
-
 <script>
-
 function updateJapanTime(){
-
-const now = new Date();
-
-const japan = new Date(now.toLocaleString("en-US",{timeZone:"Asia/Tokyo"}));
-
-const time = document.getElementById("japan-time");
-
-if(time){
-time.innerText = japan.toLocaleTimeString();
+  const now = new Date();
+  const japan = new Date(now.toLocaleString("en-US",{timeZone:"Asia/Tokyo"}));
+  const time = document.getElementById("japan-time");
+  if(time) time.innerText = japan.toLocaleTimeString();
 }
-
-}
-
 setInterval(updateJapanTime,1000);
-
 updateJapanTime();
-
 </script>
 
 </body>
