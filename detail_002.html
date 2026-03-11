@@ -1,142 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PACKAGE #2 | JDMLures</title>
 
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="../detail.css">
 
-<!-- ================================= -->
-<!-- PayPal SDK（本番用） -->
-<!-- ================================= -->
-<script src="https://www.paypal.com/sdk/js?client-id=AUMmBZH81_NW_G4vzEwhQoT6iOXSRDN2DBiRSZ53yD28BxugpYrF_iXDbZGKeTe9Zt2sGsK-61vI3ipx&currency=USD" onload="initPaypalButtons()"></script>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7TTG6B29W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-X7TTG6B29W');
-</script>
+<!-- PayPal Hosted Button SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=BAAYSfUfej86zu2_Z_lIDiT7Q67DauvIVyGDuJ7dYHqjZs4cyXbCMfsP8uH-0468Sg4KRFglHW7a7xa7qM&components=hosted-buttons&currency=USD"></script>
 
 </head>
+
 <body>
 
 <!-- HEADER -->
 <div class="top-bar">
-  <div class="top-inner">
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" class="flag" alt="Japan Flag" style="width:20px;height:14px;margin-right:8px;vertical-align:middle;">
-    <span id="japan-time">00:00:00</span>
-  </div>
+<div class="top-inner">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+class="flag"
+alt="Japan Flag"
+style="width:20px;height:14px;margin-right:8px;vertical-align:middle;">
+
+<span id="japan-time">00:00:00</span>
+
+</div>
 </div>
 
 <section class="logo-section">
-  <img src="../img/index/logo.webp" alt="JDMLures Logo">
+<img src="../img/index/logo.webp" alt="JDMLures Logo">
 </section>
 
 <section>
-  <h2 id="detail-title">PACKAGE #2</h2>
-  <p id="detail-price-top">$180</p>
-
-  <!-- PayPal Button TOP -->
-  <div id="paypal-button-container-top"></div>
+<h2 id="detail-title">PACKAGE #2</h2>
 </section>
 
 <section id="additional-images">
-  <img src="../detail/img/002/IMG_1828.png" alt="PACKAGE #2">
-  <img src="../detail/img/002/IMG_1832.png" alt="PACKAGE #2">
-  <img src="../detail/img/002/IMG_1830.png" alt="PACKAGE #2">
-  <img src="../detail/img/002/IMG_1831.png" alt="PACKAGE #2">
+
+<img id="detail-hero-img"
+src="../detail/img/002/IMG_1828.png"
+alt="PACKAGE #2">
+
+<img src="../detail/img/002/IMG_1832.png" alt="PACKAGE #2">
+<img src="../detail/img/002/IMG_1830.png" alt="PACKAGE #2">
+<img src="../detail/img/002/IMG_1831.png" alt="PACKAGE #2">
+
 </section>
 
+<!-- PAYPAL BUTTON -->
 <section>
-  <p id="detail-price-bottom">$180</p>
 
-  <!-- PayPal Button BOTTOM -->
-  <div id="paypal-button-container-bottom"></div>
+<div id="paypal-container-78BR9WKKCMMLL"></div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+paypal.HostedButtons({
+
+hostedButtonId: "78BR9WKKCMMLL"
+
+}).render("#paypal-container-78BR9WKKCMMLL");
+
+});
+
+</script>
+
 </section>
 
 <!-- CONTACT -->
+
 <section class="section contact">
-  <div class="container">
-    <h2>CONTACT</h2>
-    <ul class="contact-list">
-      <li><a href="https://www.instagram.com/jdmlures/" class="contact-icon instagram" target="_blank"></a></li>
-      <li><a href="mailto:jdmlures2026@gmail.com" class="contact-icon gmail"></a></li>
-      <li><a href="https://wa.me/817084195951" class="contact-icon whatsapp" target="_blank"></a></li>
-    </ul>
-  </div>
+
+<div class="container">
+
+<h2>CONTACT</h2>
+
+<ul class="contact-list">
+
+<li>
+<a href="https://www.instagram.com/jdmlures/"
+class="contact-icon instagram"
+target="_blank"></a>
+</li>
+
+<li>
+<a href="mailto:jdmlures2026@gmail.com"
+class="contact-icon gmail"></a>
+</li>
+
+<li>
+<a href="https://wa.me/817084195951"
+class="contact-icon whatsapp"
+target="_blank"></a>
+</li>
+
+</ul>
+
+</div>
+
 </section>
 
 <section>
-  <div class="back">
-    <a href="../index.html">BACK</a>
-  </div>
+
+<div class="back">
+<a href="../index.html">BACK</a>
+</div>
+
 </section>
 
 <footer class="footer">
-  <p>© 2026 JDM Lures All Rights Reserved.</p>
-  <nav>
-    <a href="#">Refund Policy</a> |
-    <a href="#">Terms of Service</a> |
-    <a href="#">Privacy Policy</a>
-  </nav>
+
+<p>© 2026 JDM Lures All Rights Reserved.</p>
+
+<nav>
+<a href="#">Refund Policy</a> |
+<a href="#">Terms of Service</a> |
+<a href="#">Privacy Policy</a>
+</nav>
+
 </footer>
 
-<!-- ================================= -->
-<!-- JS -->
-<!-- ================================= -->
+<!-- JAPAN TIME -->
+
 <script>
-//
-// 日本時間表示
-//
+
 function updateJapanTime(){
-  const now = new Date();
-  const japan = new Date(now.toLocaleString("en-US",{timeZone:"Asia/Tokyo"}));
-  const time = document.getElementById("japan-time");
-  if(time) time.innerText = japan.toLocaleTimeString();
+
+const now = new Date();
+
+const japan = new Date(now.toLocaleString("en-US",{timeZone:"Asia/Tokyo"}));
+
+const time = document.getElementById("japan-time");
+
+if(time){
+time.innerText = japan.toLocaleTimeString();
 }
+
+}
+
 setInterval(updateJapanTime,1000);
+
 updateJapanTime();
 
-//
-// PayPal Button
-//
-function createPaypalButton(containerId){
-  paypal.Buttons({
-    style:{
-      layout:"vertical",
-      color:"gold",
-      shape:"rect",
-      label:"paypal"
-    },
-    createOrder:function(data,actions){
-      return actions.order.create({
-        purchase_units:[{ amount:{ value:"180" } }]
-      });
-    },
-    onApprove:function(data,actions){
-      return actions.order.capture().then(function(details){
-        alert("Transaction completed by "+details.payer.name.given_name);
-        // サンクスページに遷移させたい場合：
-        // window.location.href = "thanks.html";
-      });
-    },
-    onError:function(err){
-      console.error(err);
-      alert("PayPal error");
-    }
-  }).render("#"+containerId);
-}
-
-// SDK読み込み完了後にボタン生成
-function initPaypalButtons(){
-  createPaypalButton("paypal-button-container-top");
-  createPaypalButton("paypal-button-container-bottom");
-}
 </script>
 
 </body>
