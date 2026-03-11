@@ -13,6 +13,7 @@
 <!-- ================================= -->
 <script src="https://www.paypal.com/sdk/js?client-id=AUMmBZH81_NW_G4vzEwhQoT6iOXSRDN2DBiRSZ53yD28BxugpYrF_iXDbZGKeTe9Zt2sGsK-61vI3ipx&currency=USD" onload="initPaypalButtons()"></script>
 
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7TTG6B29W"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -38,7 +39,6 @@
 
 <section>
   <h2 id="detail-title">PACKAGE #2</h2>
-
   <p id="detail-price-top">$180</p>
 
   <!-- PayPal Button TOP -->
@@ -59,7 +59,7 @@
   <div id="paypal-button-container-bottom"></div>
 </section>
 
-<!-- ===== CONTACT ===== -->
+<!-- CONTACT -->
 <section class="section contact">
   <div class="container">
     <h2>CONTACT</h2>
@@ -121,7 +121,7 @@ function createPaypalButton(containerId){
     onApprove:function(data,actions){
       return actions.order.capture().then(function(details){
         alert("Transaction completed by "+details.payer.name.given_name);
-        // ここにサンクスページ遷移を追加したければ下記を使う
+        // サンクスページに遷移させたい場合：
         // window.location.href = "thanks.html";
       });
     },
