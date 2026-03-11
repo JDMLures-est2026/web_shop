@@ -40,9 +40,9 @@
   <img src="../detail/img/002/IMG_1831.png" alt="PACKAGE #2">
 </section>
 
-<!-- PAYPAL PAYMENT LINK BUTTON -->
+<!-- PAYPAL BUY NOW BUTTON -->
 <section style="text-align:center;margin-top:40px;">
-  <a href="https://www.paypal.com/ncp/payment/78BR9WKKCMMLL" 
+  <a href="https://www.paypal.com/ncp/payment/78BR9WKKCMMLL"
      target="_blank"
      style="
        display:inline-block;
@@ -54,7 +54,7 @@
        text-decoration:none;
        font-weight:bold;
      ">
-     BUY NOW WITH PAYPAL
+    BUY NOW WITH PAYPAL
   </a>
 </section>
 
@@ -91,15 +91,15 @@
   </nav>
 </footer>
 
-<!-- JAPAN TIME -->
+<!-- JAPAN TIME SCRIPT -->
 <script>
-function updateJapanTime(){
+function updateJapanTime() {
   const now = new Date();
   const japan = new Date(now.toLocaleString("en-US",{timeZone:"Asia/Tokyo"}));
   const time = document.getElementById("japan-time");
   if(time) time.innerText = japan.toLocaleTimeString();
 }
-setInterval(updateJapanTime,1000);
+setInterval(updateJapanTime, 1000);
 updateJapanTime();
 </script>
 
