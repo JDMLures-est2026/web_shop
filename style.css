@@ -232,10 +232,12 @@ body {
     display: block;
     width: 100%;       /* カード幅に合わせる */
     max-width: 100%;   /* カード内に収まる */
-    height: auto;
+    height: 200px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 10px;
+    image-rendering: auto;
+    backface-visibility: hidden;
 }
 
 .card img.flag-icon {
@@ -296,6 +298,10 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.custom-exp{
+    margin-top: 20px;
 }
 
 /* ===== FOOTER ===== */
