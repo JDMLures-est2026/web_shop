@@ -6,13 +6,19 @@
 <title>PACKAGE #2 | JDMLures</title>
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="../detail.css">
+
+<!-- PayPal SDK 本番用 -->
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAYSfUfej86zu2_Z_lIDiT7Q67DauvIVyGDuJ7dYHqjZs4cyXbCMfsP8uH-0468Sg4KRFglHW7a7xa7qM&components=hosted-buttons&disable-funding=venmo&currency=USD">
+</script>
+
 </head>
 <body>
 
 <!-- HEADER -->
 <div class="top-bar">
   <div class="top-inner">
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" class="flag" alt="Japan Flag" style="width:20px;height:14px;margin-right:8px;vertical-align:middle;">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" class="flag" alt="Japan Flag" style="width:20px; height:14px; margin-right:8px; vertical-align:middle;">
     <span id="japan-time">00:00:00</span>
   </div>
 </div>
@@ -23,43 +29,26 @@
 
 <section>
   <h2 id="detail-title">PACKAGE #2</h2>
-  <p id="detail-price-top">$180</p>
-
-  <!-- PayPal Button TOP -->
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="business" value="kohji.noguchi0522@gmail.com">
-    <input type="hidden" name="item_name" value="PACKAGE #2">
-    <input type="hidden" name="amount" value="180.00">
-    <input type="hidden" name="currency_code" value="USD">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" 
-           border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-  </form>
 </section>
 
 <section id="additional-images">
-  <img src="../detail/img/002/IMG_1828.png" alt="PACKAGE #2">
+  <img id="detail-hero-img" src="../detail/img/002/IMG_1828.png" alt="PACKAGE #2">
   <img src="../detail/img/002/IMG_1832.png" alt="PACKAGE #2">
   <img src="../detail/img/002/IMG_1830.png" alt="PACKAGE #2">
   <img src="../detail/img/002/IMG_1831.png" alt="PACKAGE #2">
 </section>
 
+<!-- 本番 PayPal ボタン -->
 <section>
-  <p id="detail-price-bottom">$180</p>
-
-  <!-- PayPal Button BOTTOM -->
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="business" value="kohji.noguchi0522@gmail.com">
-    <input type="hidden" name="item_name" value="PACKAGE #2">
-    <input type="hidden" name="amount" value="180.00">
-    <input type="hidden" name="currency_code" value="USD">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" 
-           border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-  </form>
+  <div id="paypal-container-TAPNYMJGH3VTJ"></div>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "TAPNYMJGH3VTJ",
+    }).render("#paypal-container-TAPNYMJGH3VTJ")
+  </script>
 </section>
 
-<!-- CONTACT -->
+<!-- ===== CONTACT ===== -->
 <section class="section contact">
   <div class="container">
     <h2>CONTACT</h2>
@@ -86,6 +75,7 @@
   </nav>
 </footer>
 
+<!-- ===== JS: 日本時間 & PayPal ===== -->
 <script>
   // 日本時間表示
   function updateJapanTime(){
@@ -94,7 +84,7 @@
     const time = document.getElementById("japan-time");
     if(time) time.innerText = japan.toLocaleTimeString();
   }
-  setInterval(updateJapanTime,1000);
+  setInterval(updateJapanTime, 1000);
   updateJapanTime();
 </script>
 
