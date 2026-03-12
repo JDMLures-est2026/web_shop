@@ -37,7 +37,7 @@
     "id": 4,
     "title": "PACKAGE #4",
     "price": 160,
-    "hero": "detail/img/hero/04/IMG_1885.jpg",
+    "hero": "img/hero/04/IMG_1885.jpg",
     "thumbnail": "https://picsum.photos/400/300?random=6",
     "link": "detail/detail_004.html",
     "images": [
