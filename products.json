@@ -3,7 +3,7 @@
     "id": 1,
     "title": "PACKAGE #1",
     "price": 180,
-    "hero": "img/hero/package1-hero.webp",
+    "hero": "img/hero/01/IMG_1872.jpg",
     "thumbnail": "img/detail/package1-0.webp",
     "link": "detail/detail_001.html",
     "images": [
@@ -11,18 +11,6 @@
       "img/detail/package1-1.webp",
       "img/detail/package1-2.webp"
     ],
-    "soldDate": "2026-03-12",
-    "listedDate": "2026-03-12",
-    "shippedTo": "",
-    "flag": "US"
-  },
-  {
-    "id": 2,
-    "title": "PACKAGE #2",
-    "price": 180,
-    "hero": "detail/img/002/IMG_1828.png",
-    "thumbnail": "detail/img/002/IMG_1828.png",
-    "link": "detail/detail_002.html",
     "soldDate": "2026-03-12",
     "listedDate": "2026-03-12",
     "shippedTo": "",
