@@ -20,7 +20,7 @@
     "id": 3,
     "title": "PACKAGE #3",
     "price": 180,
-    "hero": "https://picsum.photos/900/450?random=6",
+    "hero": "img/hero/03/IMG_1877.jpeg",
     "thumbnail": "https://picsum.photos/400/300?random=6",
     "link": "detail/detail_003.html",
     "images": [
@@ -32,18 +32,5 @@
     "listedDate": "2026-03-12",
     "shippedTo": "",
     "flag": "GB"
-  },
-  {
-    "id": 999,
-    "title": "COMING SOON",
-    "price": 0,
-    "hero": "dummy",
-    "thumbnail": "",
-    "link": "#",
-    "images": [],
-    "soldDate": "",
-    "listedDate": "",
-    "shippedTo": "",
-    "flag": ""
   }
 ]
