@@ -20,7 +20,7 @@
     "id": 3,
     "title": "PACKAGE #3",
     "price": 180,
-    "hero": "https://picsum.photos/900/450?random=6",
+    "hero": "img/hero/03/IMG_1877.jpeg",
     "thumbnail": "https://picsum.photos/400/300?random=6",
     "link": "detail/detail_003.html",
     "images": [
@@ -33,17 +33,21 @@
     "shippedTo": "",
     "flag": "GB"
   },
-  {
-    "id": 999,
-    "title": "COMING SOON",
-    "price": 0,
-    "hero": "dummy",
-    "thumbnail": "",
-    "link": "#",
-    "images": [],
-    "soldDate": "",
-    "listedDate": "",
+   {
+    "id": 4,
+    "title": "PACKAGE #4",
+    "price": 160,
+    "hero": "img/hero/04/IMG_1885.jpg",
+    "thumbnail": "https://picsum.photos/400/300?random=6",
+    "link": "detail/detail_004.html",
+    "images": [
+      "https://picsum.photos/400/300?random=7",
+      "https://picsum.photos/400/300?random=8",
+      "https://picsum.photos/400/300?random=9"
+    ],
+    "soldDate": "2026-03-20",
+    "listedDate": "2026-03-12",
     "shippedTo": "",
-    "flag": ""
+    "flag": "GB"
   }
 ]
