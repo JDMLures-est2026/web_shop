@@ -198,6 +198,10 @@ body {
 }
 
 /* ===== CARD SLIDER ===== */
+.history{
+    display: none;
+}
+
 .card-slider {
     display: flex;
     overflow-x: auto;
