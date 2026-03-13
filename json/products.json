@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "PACKAGE #1",
-    "price": 180,
+    "price": 119,
     "hero": "img/hero/01/IMG_1872.jpg",
     "thumbnail": "img/detail/package1-0.webp",
     "link": "detail/detail_001.html",
@@ -19,7 +19,7 @@
   {
     "id": 3,
     "title": "PACKAGE #3",
-    "price": 180,
+    "price": 110,
     "hero": "img/hero/03/IMG_1877.jpeg",
     "thumbnail": "https://picsum.photos/400/300?random=6",
     "link": "detail/detail_003.html",
@@ -36,7 +36,7 @@
    {
     "id": 4,
     "title": "PACKAGE #4",
-    "price": 160,
+    "price": 119,
     "hero": "img/hero/04/IMG_1885.jpg",
     "thumbnail": "https://picsum.photos/400/300?random=6",
     "link": "detail/detail_004.html",
