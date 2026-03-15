@@ -197,6 +197,10 @@ body {
     transform: scale(1.3);
 }
 
+.news ul{
+    list-style: none;
+}
+
 /* ===== CARD SLIDER ===== */
 .history{
     display: none;
@@ -307,6 +311,13 @@ body {
 .custom-exp{
     margin-top: 20px;
 }
+
+.btn{
+    text-align: center;
+    font-size: 30px;
+}
+
+
 
 /* ===== FOOTER ===== */
 .footer {
