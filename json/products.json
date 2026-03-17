@@ -3,7 +3,7 @@
     "id": 5,
     "title": "PACKAGE #5",
     "price": 109,
-    "hero": "../detail/img/005/IMG_1956.jpg",
+    "hero": "detail/img/005/IMG_1956.jpg",
     "thumbnail": "detail//img/002/IMG_1820.png",
     "link": "detail/detail_005.html",
     "images": [
