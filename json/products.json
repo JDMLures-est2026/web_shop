@@ -1,17 +1,35 @@
 [
-    {
+  {
     "id": 5,
     "title": "PACKAGE #5",
     "price": 109,
     "hero": "detail/img/005/IMG_1956.jpg",
-    "thumbnail": "detail//img/002/IMG_1820.png",
+    "thumbnail": "detail/img/005/IMG_1956.jpg",
     "link": "detail/detail_005.html",
     "images": [
       "https://picsum.photos/400/300?random=7",
       "https://picsum.photos/400/300?random=8",
       "https://picsum.photos/400/300?random=9"
     ],
-    "soldDate": "2026-03-20",
+    "soldDate": "2026-03-17",
+    "listedDate": "2026-03-17",
+    "shippedTo": "",
+    "flag": "US",
+    "showHero": false
+  },
+  {
+    "id": 6,
+    "title": "PACKAGE #6",
+    "price": 115,
+    "hero": "detail/img/006/IMG_1968.jpeg",
+    "thumbnail": "detail//img/002/IMG_1820.png",
+    "link": "detail/detail_006.html",
+    "images": [
+      "https://picsum.photos/400/300?random=7",
+      "https://picsum.photos/400/300?random=8",
+      "https://picsum.photos/400/300?random=9"
+    ],
+    "soldDate": "2026-03-xx",
     "listedDate": "2026-03-17",
     "shippedTo": "",
     "flag": "US"
