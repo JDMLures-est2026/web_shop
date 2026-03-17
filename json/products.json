@@ -1,60 +1,9 @@
 [
-  {
-    "id": 1,
-    "title": "PACKAGE #1",
-    "price": 119,
-    "hero": "img/hero/01/IMG_1872.jpg",
-    "thumbnail": "img/detail/package1-0.webp",
-    "link": "detail/detail_001.html",
-    "images": [
-      "img/detail/package1-0.webp",
-      "img/detail/package1-1.webp",
-      "img/detail/package1-2.webp"
-    ],
-    "soldDate": "2026-03-12",
-    "listedDate": "2026-03-12",
-    "shippedTo": "",
-    "flag": "US"
-  },
-  {
-    "id": 3,
-    "title": "PACKAGE #3",
-    "price": 110,
-    "hero": "img/hero/03/IMG_1877.jpeg",
-    "thumbnail": "https://picsum.photos/400/300?random=6",
-    "link": "detail/detail_003.html",
-    "images": [
-      "https://picsum.photos/400/300?random=7",
-      "https://picsum.photos/400/300?random=8",
-      "https://picsum.photos/400/300?random=9"
-    ],
-    "soldDate": "2026-03-20",
-    "listedDate": "2026-03-12",
-    "shippedTo": "",
-    "flag": "GB"
-  },
-   {
-    "id": 4,
-    "title": "PACKAGE #4",
-    "price": 119,
-    "hero": "img/hero/04/IMG_1885.jpg",
-    "thumbnail": "https://picsum.photos/400/300?random=6",
-    "link": "detail/detail_004.html",
-    "images": [
-      "https://picsum.photos/400/300?random=7",
-      "https://picsum.photos/400/300?random=8",
-      "https://picsum.photos/400/300?random=9"
-    ],
-    "soldDate": "2026-03-20",
-    "listedDate": "2026-03-12",
-    "shippedTo": "",
-    "flag": "GB"
-  },
     {
     "id": 5,
     "title": "PACKAGE #5",
-    "price": 120,
-    "hero": "img/hero/04/IMG_1820.jpg",
+    "price": 109,
+    "hero": "../detail/img/005/IMG_1956.jpg",
     "thumbnail": "detail//img/002/IMG_1820.png",
     "link": "detail/detail_005.html",
     "images": [
@@ -63,7 +12,7 @@
       "https://picsum.photos/400/300?random=9"
     ],
     "soldDate": "2026-03-20",
-    "listedDate": "2026-03-12",
+    "listedDate": "2026-03-17",
     "shippedTo": "",
     "flag": "US"
   }
