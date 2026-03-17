@@ -202,9 +202,9 @@ body {
 }
 
 /* ===== CARD SLIDER ===== */
-.history{
+/* .history{
     display: none;
-}
+} */
 
 .card-slider {
     display: flex;
