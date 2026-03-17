@@ -23,26 +23,29 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(data => {
       if(!data || !data.length) return;
 
-      // ===== HERO SLIDER =====
-      const heroData = data.slice(0,3);
-      // ダミー「COMING SOON」を改行入りに変更
+      // ✅ HERO用だけフィルター（ここが変更点）
+      const heroData = data.filter(item => item.showHero !== false);
+
+      // ダミー追加
       heroData.push({ hero: "dummy", title: "FIRST COME FIRST SERVED\nLIMITED DROP" });
 
+      // ===== HERO SLIDER =====
       heroData.forEach((item, index) => {
         const slide = document.createElement('div');
         slide.className = 'slide';
         if(index === 0) slide.classList.add('active');
 
         if(item.hero === "dummy"){
-          // CSSに任せてテキストだけHTMLで改行を入れる
           const dummyDiv = document.createElement('div');
           dummyDiv.className = 'dummy-slide';
+
           const dummyText = document.createElement('div');
           dummyText.className = 'dummy-text';
-          // 改行反映
           dummyText.innerHTML = item.title.replace(/\n/g, "<br>");
+
           dummyDiv.appendChild(dummyText);
           slide.appendChild(dummyDiv);
+
         } else {
           const img = document.createElement('img');
           img.src = item.hero;
@@ -105,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
 
-      // ===== CARD SLIDER =====
+      // ===== CARD SLIDER（ここは変更なし）=====
       if(cardSlider){
         data.forEach(item => {
           const card = document.createElement('div');
