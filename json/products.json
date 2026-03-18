@@ -21,17 +21,30 @@
     "id": 6,
     "title": "PACKAGE #6",
     "price": 115,
-    "hero": "detail/img/006/IMG_1968.jpeg",
-    "thumbnail": "detail//img/002/IMG_1820.png",
+    "hero": "../detail/img/006/IMG_1968.jpeg",
+    "thumbnail": "../detail/img/006/IMG_1968.jpeg",
     "link": "detail/detail_006.html",
     "images": [
-      "https://picsum.photos/400/300?random=7",
-      "https://picsum.photos/400/300?random=8",
-      "https://picsum.photos/400/300?random=9"
     ],
-    "soldDate": "2026-03-xx",
+    "soldDate": "2026-03-18",
     "listedDate": "2026-03-17",
     "shippedTo": "",
-    "flag": "US"
+    "flag": "US",
+    "showHero": false
+  },
+   {
+    "id": 7,
+    "title": "PACKAGE Vip#1",
+    "price": 115,
+    "hero": "detail/img/vip/01/IMG_2020.jpg",
+    "thumbnail": "detail/img/vip/01/IMG_2020.jpg",
+    "link": "detail/vip.html",
+    "images": [
+    ],
+    "soldDate": "2026-03-18",
+    "listedDate": "2026-03-18",
+    "shippedTo": "",
+    "flag": "US",
+    "showHero": false
   }
 ]
