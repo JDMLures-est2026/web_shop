@@ -21,7 +21,7 @@
     "id": 6,
     "title": "PACKAGE #6",
     "price": 115,
-    "hero": "../detail/img/006/IMG_1968.jpeg",
+    "hero": "detail/img/006/IMG_1968.jpeg",
     "thumbnail": "../detail/img/006/IMG_1968.jpeg",
     "link": "detail/detail_006.html",
     "images": [
