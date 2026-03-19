@@ -152,6 +152,13 @@ body {
     background: none;
 }
 
+.blk li{
+    height: 200px;
+    background-color: #000;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
 /* ===== COMING SOON ===== */
 .slide.coming .coming-soon-btn {
     position: absolute;
