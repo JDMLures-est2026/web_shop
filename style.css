@@ -315,6 +315,11 @@ body {
     margin: 0 auto;
 }
 
+.custom-service-section{
+    display: none;
+}
+
+
 .custom-exp{
     margin-top: 20px;
 }

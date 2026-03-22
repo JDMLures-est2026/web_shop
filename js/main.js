@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
       // ダミー追加
       heroData.push({ hero: "dummy", title: "FIRST COME FIRST SERVED\nLIMITED DROP" });
 
-      // ===== HERO SLIDER =====
+      heroData.push({ hero: "dummy", title: "Inventory changes daily.\nDM for latest stock" });
+
+      // ===== HERO SLIDER ===== 
       heroData.forEach((item, index) => {
         const slide = document.createElement('div');
         slide.className = 'slide';
